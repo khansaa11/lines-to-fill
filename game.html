@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game - Lines to Fill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="game">
+  <section class="view">
+    <div class="card wide">
+      <header class="bar">
+        <button class="btn small" id="btn-back">Dashboard</button>
+        <button class="btn small" id="btn-logout-game">Logout</button>
+      </header>
+      <div class="hud">
+        <div><span>Level</span><b id="hud-level">1</b></div>
+        <div><span>Waktu</span><b id="hud-time">0</b></div>
+        <div><span>Terisi</span><b id="hud-fill">0/0</b></div>
+        <div><span>Skor</span><b id="hud-score">0</b></div>
+      </div>
+      <div class="board-wrap"><div id="board" class="board" role="application" aria-label="Papan permainan"></div></div>
+      <div class="row">
+        <button class="btn" id="btn-undo">Undo</button>
+        <button class="btn" id="btn-restart">Mulai ulang</button>
+      </div>
+      <p class="muted center">Aturan: isi semua kotak kosong dengan satu garis tanpa putus.</p>
+    </div>
+
+    <div class="overlay" id="overlay" hidden>
+      <div class="card narrow center">
+        <h2>Level selesai</h2>
+        <p id="win-text"></p>
+        <div class="row">
+          <button class="btn primary" id="btn-next">Level berikutnya</button>
+          <button class="btn" id="btn-win-dash">Dashboard</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

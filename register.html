@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - Lines to Fill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="register">
+  <section class="view">
+    <div class="card narrow">
+      <h2>Buat akun</h2>
+      <form id="form-register" novalidate>
+        <label for="reg-username">Username</label>
+        <input id="reg-username" autocomplete="username" placeholder="minimal 4 karakter">
+        <label for="reg-password">Password</label>
+        <input id="reg-password" type="password" autocomplete="new-password" placeholder="minimal 6 karakter">
+        <label for="reg-confirm">Ulangi password</label>
+        <input id="reg-confirm" type="password" autocomplete="new-password">
+        <p class="msg" id="msg-register" role="alert"></p>
+        <button class="btn primary" type="submit">Daftar</button>
+      </form>
+      <p class="alt">Sudah punya akun? <a href="login.html">Login</a> &nbsp;|&nbsp; <a href="index.html">Beranda</a></p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - Lines to Fill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+  <section class="view">
+    <div class="card wide">
+      <header class="bar">
+        <div>
+          <h2>Halo, <span id="dash-name"></span></h2>
+          <p class="muted">Dashboard pemain</p>
+        </div>
+        <button class="btn small" id="btn-logout-dash">Logout</button>
+      </header>
+      <div class="stats">
+        <div class="stat"><b id="dash-level">1</b><span>Level saat ini</span></div>
+        <div class="stat"><b id="dash-score">0</b><span>Total skor</span></div>
+        <div class="stat"><b id="dash-high">0</b><span>Skor tertinggi (1 level)</span></div>
+        <div class="stat"><b id="dash-solved">0</b><span>Level selesai</span></div>
+      </div>
+      <h3>Riwayat terakhir</h3>
+      <ul id="dash-history" class="history"></ul>
+      <div class="row">
+        <button class="btn primary" id="btn-play">Mulai / Lanjutkan</button>
+        <button class="btn" id="btn-howto">Cara bermain</button>
+      </div>
+      <div class="howto" id="howto" hidden>
+        <ol>
+          <li>Mulai dari kotak kuning (titik awal).</li>
+          <li>Geser jari atau klik kotak di sebelahnya untuk menarik garis.</li>
+          <li>Isi semua kotak kosong. Kotak gelap adalah tembok.</li>
+          <li>Salah jalan? Geser mundur ke kotak sebelumnya atau tekan Undo.</li>
+          <li>Selesaikan lebih cepat untuk mendapat bonus skor.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
